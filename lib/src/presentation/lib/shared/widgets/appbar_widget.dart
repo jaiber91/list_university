@@ -4,11 +4,14 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final bool showBackBtn;
   final bool centerTitle;
+  final List<Widget>? actions;
+
   const AppbarWidget({
     super.key,
     required this.title,
     required this.centerTitle,
     this.showBackBtn = true,
+    this.actions,
   });
 
   @override
@@ -17,6 +20,7 @@ class AppbarWidget extends StatelessWidget implements PreferredSizeWidget {
       leading: showBackBtn ? const BackButton() : null,
       title: Text(title),
       centerTitle: centerTitle,
+      actions: actions,
     );
   }
 

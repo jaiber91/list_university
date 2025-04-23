@@ -29,7 +29,7 @@ class DetailPage extends ConsumerWidget {
             _infoList('Dominios', university.domains),
             _infoList('Páginas web', university.webPages, isLink: true),
             const SizedBox(height: 16),
-            const ImagePickerWidget(), // 👈 Aquí va tu nuevo widget
+            const ImagePickerWidget(),
             const SizedBox(height: 24),
           ],
         ),

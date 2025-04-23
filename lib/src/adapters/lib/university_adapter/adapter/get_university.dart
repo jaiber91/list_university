@@ -12,9 +12,9 @@ class GetUniversityListAdapter implements GetUniversityListOutPort {
 
   @override
   Future<List<UniversityDomain>> getListUniversity() async {
-    final List<ListUniversityDto> cats =
+    final List<ListUniversityDto> universityList =
         await _universityListDatasource.getListUniversity();
 
-    return cats.map((university) => university.toDomain()).toList();
+    return universityList.map((university) => university.toDomain()).toList();
   }
 }

@@ -8,3 +8,6 @@ final getUniversityProvider =
   final getUniversity = getIt<GetUniversityListInPort>();
   return await getUniversity.getListUniversity();
 });
+
+final selectedUniversityProvider =
+    StateProvider<UniversityDomain?>((ref) => null);

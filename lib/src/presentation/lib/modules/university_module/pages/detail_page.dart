@@ -27,7 +27,10 @@ class DetailPage extends ConsumerWidget {
               _infoItem('Estado', university.stateProvince!),
             _infoItem('Código ISO', university.alphaTwoCode),
             _infoList('Dominios', university.domains),
-            _infoList('Páginas web', university.webPages),
+            _infoList('Páginas web', university.webPages, isLink: true),
+            const SizedBox(height: 16),
+            const ImagePickerWidget(), // 👈 Aquí va tu nuevo widget
+            const SizedBox(height: 24),
           ],
         ),
       ),

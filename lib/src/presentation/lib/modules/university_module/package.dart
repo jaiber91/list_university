@@ -8,6 +8,7 @@ import '../../providers/university_provider.dart';
 import '../../shared/templates/base_template.dart';
 import '../../shared/widgets/custom_card.dart';
 import '../../shared/widgets/custom_grid_widget.dart';
+import '../../shared/widgets/image_picker_widget.dart';
 import '../../shared/utils/launcher_utils.dart';
 
 part 'router.dart';

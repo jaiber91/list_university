@@ -7,12 +7,15 @@ class BaseTemplate extends StatelessWidget {
   final bool? showLeadingBtnAppar;
   final bool? centerTitleAppar;
   final Widget body;
+  final List<Widget>? actions;
+
   const BaseTemplate({
     super.key,
     required this.titleAppar,
     this.showLeadingBtnAppar,
     this.centerTitleAppar,
     required this.body,
+    this.actions,
   });
 
   @override
@@ -20,8 +23,9 @@ class BaseTemplate extends StatelessWidget {
     return Scaffold(
       appBar: AppbarWidget(
         title: titleAppar,
-        showBackBtn: showLeadingBtnAppar ?? false,
+        showBackBtn: showLeadingBtnAppar ?? true,
         centerTitle: centerTitleAppar ?? true,
+        actions: actions,
       ),
       body: SafeArea(child: body),
     );

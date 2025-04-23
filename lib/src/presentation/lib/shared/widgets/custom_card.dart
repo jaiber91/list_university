@@ -1,4 +1,7 @@
-part of '../../modules/university_module/package.dart';
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
   final String name;
